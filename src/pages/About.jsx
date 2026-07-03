@@ -1,8 +1,8 @@
 import { Bot, Code2, Cpu, Download, Lightbulb } from "lucide-react";
 import { motion } from "framer-motion";
 
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 
 const fadeUp = {
   hidden: {
@@ -71,12 +71,25 @@ export function About() {
             </p>
 
             <div className="mt-8">
-              <Button variant="outline" size="lg" asChild>
-                <a href="/Pyae-Sone-Phyo-CV.pdf" download className="flex items-center gap-2">
-                  <Download className="size-4" />
-                  Download CV
-                </a>
-              </Button>
+              <motion.a
+                href="/Pyae-Sone-Phyo-CV.pdf"
+                download="Pyae-Sone-Phyo-CV.pdf"
+                className={cn(
+                  "group/button inline-flex shrink-0 cursor-pointer items-center justify-center gap-2",
+                  "whitespace-nowrap select-none border font-mono font-bold",
+                  "h-12 px-6 text-lg",
+                  "border-primary bg-transparent text-primary",
+                  "[&_svg]:pointer-events-none [&_svg]:shrink-0",
+                )}
+                initial={{ backgroundColor: "rgba(0, 0, 0, 0)", color: "var(--primary)", borderColor: "var(--primary)" }}
+                animate={{ backgroundColor: "rgba(0, 0, 0, 0)", color: "var(--primary)", borderColor: "var(--primary)" }}
+                whileHover={{ backgroundColor: "var(--primary)", color: "var(--primary-foreground)", borderColor: "var(--primary)" }}
+                whileTap={{ y: 1 }}
+                transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+              >
+                <Download className="size-4" />
+                Download CV
+              </motion.a>
             </div>
           </motion.div>
 
