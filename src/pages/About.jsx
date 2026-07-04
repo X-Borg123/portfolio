@@ -25,12 +25,12 @@ const focusItems = [
     label: "Node.js",
   },
   {
-    icon: Lightbulb,
-    label: "WordPress",
-  },
-  {
     icon: Bot,
     label: "n8n",
+  },
+  {
+    icon: Lightbulb,
+    label: "WordPress",
   },
 ];
 

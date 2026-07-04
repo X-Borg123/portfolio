@@ -52,8 +52,8 @@ const projects = [
     icon: MessageSquare,
     image: "/line-summary-bot.png",
     description:
-      "An NLU-powered LINE bot that captures group messages, understands natural language summary requests, and delivers AI-generated digests — with scheduled daily reports, smart 90-day retention, and real-time error alerts via LINE push notifications.",
-    tags: ["n8n", "LINE", "AI", "Supabase"],
+      "Reduced manual summary time by ~80% for group admins” or “Handled 500+ daily messages with 95%+ accuracy in intent detection and summarization using OpenRouter LLM, LINE Messaging API, and Supabase Vector Store.",
+    tags: ["n8n", "OpenRouter", "Supabase Vector", "Supabase", "LINE Messaging API"],
     featured: false,
   },
   {
@@ -65,7 +65,7 @@ const projects = [
     image: "/fb-auto-reply.png",
     description:
       "An AI-powered agent that monitors Facebook page comments and generates contextual replies using OpenRouter LLM with a Google Sheets knowledge base — enabling 24/7 automated customer engagement.",
-    tags: ["n8n", "Facebook", "AI Agent", "OpenRouter"],
+    tags: ["n8n", "Meta Graph API", "AI Agent", "OpenRouter"],
     featured: false,
   },
   {
@@ -348,7 +348,7 @@ export function Projects() {
                       <div className="absolute inset-0 bg-linear-to-t from-background/70 to-transparent" />
 
                       <div className="absolute left-5 top-5 flex flex-wrap gap-2">
-                        {project.tags.slice(0, 3).map((tag) => (
+                        {project.tags.slice(0, 5).map((tag) => (
                           <span
                             key={tag}
                             className="border border-primary/40 bg-background/80 px-2 py-1 font-mono text-[10px] font-bold text-primary backdrop-blur"

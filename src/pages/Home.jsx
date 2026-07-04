@@ -57,8 +57,8 @@ export function Home() {
 
             <TypewriterText
               lines={[
-                { text: "Web Developer &" },
-                { text: "Automation Engineer.", highlight: true },
+                { text: "Full-Stack Developer &" },
+                { text: "AI Automation Engineer", highlight: true },
               ]}
               speed={0.09}
               className="max-w-full font-mono text-[3.15rem] font-bold leading-[0.95] tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-6xl"
