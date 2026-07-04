@@ -87,7 +87,7 @@ const projects = [
     type: "Full Stack",
     icon: Server,
     image: "/ems.png",
-    link: "https://ems-sigma-bay.vercel.app",
+    link: "https://psp-employee-management-system.vercel.app",
     description:
       "A complete employee management system with role-based access, leave approval workflows, salary management, department organization, and admin dashboards.",
     tags: ["MongoDB", "Express", "React", "Node.js"],
